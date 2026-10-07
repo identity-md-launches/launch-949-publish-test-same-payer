@@ -1,0 +1,17 @@
+{
+  "name": "same-payer-takeover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.2" },
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test scripts/build.test.ts",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}
